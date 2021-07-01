@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Mercado Liebre, el mejor lugar para vender !</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/78eee2c548.js" crossorigin="anonymous"></script>
+  </head> 
+<body>
+    <header class="main-header">
+    <div class="main-header-top-bar">
+        <img src="/images/logo-mercado-liebre.svg"  class="logo"></img>
+        <h2 class="copy-header">
+          <i id="iconoinicio" class="fas fa-hand-holding-usd"></i> 
+          Comprá en cuotas y sin tarjeta de crédito</h2>
+    </div>
+
+    <a href="#" class="hamburguer-button">
+      <i id="iconoMenu" class="fas fa-bars"></i> 
+    </a>
+    
+    <nav class="main-navbar">
+      <ul class="left-navbar">
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+      <ul class="right-navbar">
+        <li><a href="./registro.html">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+        <li><a href="#">Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="homebanner">
+      <img class="homebannerimagen" src="./images/img-home-banner.jpg" alt="bannerinicial">
+    </div>
+    <p class="ultimavista">Basado en tu última vista</p>
+   <div class="cuerpoproductos">
+      <div class="containerproducto1">  
+          <img class="imagen" src="./images/img-cafetera-moulinex.jpg" alt="cafetera-moulinex">
+          <i class="fas fa-truck" ></i>
+        <div class="precioydesc"> 
+          <p class="precio">$6.770</p>
+          <p class="descuento"> 40 % off</p>
+        </div>
+          <p class="descprod">Cafetera Moulinex</p>
+      </div>
+      <div class="containerproducto2">
+        <img class="imagen" src="./images/img-macbook-pro-2019.jpg" alt="MacBook Pro">
+        <i class="fas fa-truck"></i>
+        <div class="precioydesc">        
+        <p class="precio">$230.000</p>
+        <p class="descuento"> 20 % off</p>
+       </div>
+        <p class="descprod">MacBook Pro 2019</p>
+      </div>   
+      <div class="containerproducto3">
+        <img class="imagen" src="./images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy">
+        <i class="fas fa-truck"  ></i>
+        <div class="precioydesc">  
+        <p class="precio">$70.500</p>
+        <p class="descuento"> 10 % off</p>
+      </div> 
+        <p class="descprod">Teléfono Samsung</p>
+      </div>  
+      <div class="containerproducto4">
+        <img class="imagen" src="./images/img-tv-samsung-smart.jpg" alt="Samsung tv">
+        <i class="fas fa-truck"></i>
+        <div class="precioydesc">  
+        <p class="precio">$23.200</p>
+        <p class="descuento"> 5 % off</p>
+      </div> 
+        <p class="descprod">Samsung 43"</p>
+      </div>    
+      </p>
+    </div>
+
+  </main>
+  <form action="/crear-producto" method="POST" class="create-form">
+    <div class="control-formulario">
+      <label>Nombre del producto:</label>
+      <input type="text" name="nombre" class="control">
+    </div>
+    <div class="control-formulario">
+      <label>Precio:</label>
+      <input type="text" name="precio" placeholder="123.56" class="control"> 
+    </div>
+    <div class="control-formulario">
+      <label>Categoría:</label>
+      <select name="categoría" class="control">
+        <option value="hogar">Hogar</option>
+        <option value="electro">Electro</option>
+        <option value="indumentaria">Indumentaria</option>
+      </select>
+    </div>
+    <div class="control-formulario">
+      <label>Ciudad:</label>
+      <select name="ciudad" class="control">
+        <option value="bsas">Buenos Aires</option>
+        <option value="ros">Rosario</option>
+        <option value="mdz">Mendoza</option>
+      </select>
+    </div>
+    <div class="control-formulario">
+      <label>Descripción:</label>
+      <textarea name="descripcion" class="control"></textarea>
+    </div>
+    <div class="control-formulario">
+    <label>Está en oferta:</label>
+      <input type="radio" name="enOferta">
+    </div>
+    <button type="reset" class="boton-formulario">Borrar</button>
+    <button type="submit" class="boton-formulario">Guardar</button>
+  </form>
+</body>
+<footer>
+    <p id="icono" class="fas fa-credit-card"></p>
+    <p>Pagá con tarjeta o efectivo</p>
+    <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+    <p id="icono" class="fas fa-gift"></p>
+    <p>"Envío gratis desde $ 2.500</p>
+    <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos</p>
+    <p id="icono" class="fas fa-user-shield"></p>
+    <p>Seguridad, de principio a fin</p>
+    <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+    <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+  
+</footer> 
+</html>
