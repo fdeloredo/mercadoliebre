@@ -15,19 +15,32 @@
 </head>
 <body id="formreg">
       <form action="/registro" method="POST" class="formularioregistro">
-          <label class="nombreyapellido">Nombre y apellido </label>
-          <input type="text" name="nombreyapellido" id="" placeholder="Nombre y apellido">
+      <div >
+            <input type="text" name="nombreyapellido" id="" placeholder="Nombre y apellido" class="nombreyapellido      ">
+      </div>
+      <div >
           <label>Nombre de Usuario </label>
-          <input type="text" name="nombredeusuario" id="" placeholder="Nombre de Usuario">
+          <input type="text" name="nombredeusuario" id="" placeholder="Nombre de Usuario" class="nombredeusuario">
+      </div>
+      <div class="email1">
+            <input type="text" name="email" id="" placeholder="E-mail" class="email">
+        </div>
+      <div class="fechadenacimiento">
           <label>Fecha de nacimiento </label>
           <input type="date" name="fechadenacimiento">
+      </div>
+      <div class="domicilio">
           <label>Domicilio </label>
           <input type="text" name="Domicilio">
+      </div>
+      <div class="categoria">
           <p>Elige la catergoría de tu cuenta</p>
           <label>Comprador</label>
           <input type="radio" name="perfilusuario">
-          <label>Vendedor</label>
+          <label>Vendedor</label>         
           <input type="radio" name="perfilusuario">
+      </div>
+      <div class="categoriadeinteres">
           <label>Categorías de interés  </label>
           <select name="categoridasdeinteres" id="">
                 <option value="electro">Electro</option>
@@ -36,14 +49,23 @@
                 <option value="juegueteria">Juguetería</option>
                 <option value="vida sana">Vida Sana</option>
           </select>
+      </div>
+      <div class="fotodeusuario">
           <label>Foto de usuario</label>
           <input type="file" name="Foto de usuario">
+      </div>
+      <div class="contraseña">
           <label>Contraseña </label>
           <input type="password" name="clave">
+      </div>
+      <div class="repitalacontraseña">
           <label>Repita la contraseña </label>
           <input type="password" name="confirmacionclave">
+      </div>
+      <div class="butmityreset">
            <button type="submit">Enviar</button> 
            <button type="reset">Borrar</button> 
+      </div>
       </form>
 </body>
 </html>
