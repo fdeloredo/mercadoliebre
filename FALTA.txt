@@ -1,4 +1,5 @@
-todo esta demas tirado a la izq
-falta sombra 
-imagenes mas grandes ? 
+
+- La imagen esta quedando mas grande y siempre queda una barrita pendiente de mover 
+- como hacer que la lupa siga el input de al lado 
+
 

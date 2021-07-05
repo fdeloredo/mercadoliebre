@@ -4,22 +4,43 @@
   padding: 0px;
   }
 .homebanner {
-  width: 100vw;
+  width: 100%;
   }
+
+.logoybuscador {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
 .homebannerimagen{
   width: 100%;
 }
 .logo {
-width: 200px;
+width: 50%;
 padding: 15px;  
 }
-header {
-  width: 100vw;
+.main-header-top-bar img{
+  width: 50%;
   }
+.buscador {
+ max-width: 50%;
+ display: block; 
+}
+.buscador input {
+  max-width: 85%;
+}
+.buscador i {
+  max-width: 15%;
+}
+header {
+  width: 100%;
+    }
 
 .main-header {
   background-color: #EAC926;
-  padding: 20px ; 
+  padding: 20px; 
+  width: 100%;
   }
 .hamburguer-button {
   background-color: #03264C;
@@ -36,10 +57,12 @@ header {
 .copy-header {
  font-weight: 400;
  text-align: center;
+ font-size: 3vw;
 }   
 .main-navbar {
   display: none;
   padding: 15px;
+  width: 100%;
 }
 .main-navbar ul {
   list-style: none;
@@ -51,10 +74,10 @@ text-decoration: none;
 color: #222222;
 display: inline-block;
 padding: 5px 0;
-font-size: 17px;
+font-size: 2vw;
 } 
 .cuerpoproductos{
-  width: 100vw;
+  width: 100%;
   display: flex;
   background-color: #ebebeb;
   padding: 20px;
@@ -63,8 +86,7 @@ font-size: 17px;
 .imagen {
   width: 100%;
   display: block;
-  padding: 30px;
-  
+  padding: 30px;  
   }
 
 .containerproducto1 {
@@ -105,7 +127,7 @@ font-size: 17px;
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  bottom: 12%;
+  bottom: 15%;
 }
 .containerproducto2 i{
   display: block;
@@ -119,7 +141,7 @@ font-size: 17px;
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  bottom: 12%;
+  bottom: 15%;
 }
 .containerproducto3 i{
   display: block;
@@ -133,7 +155,7 @@ font-size: 17px;
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  bottom: 12%;
+  bottom: 15%;
 }
 .containerproducto4 i{
   display: block;
@@ -147,7 +169,7 @@ font-size: 17px;
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  bottom: 12%;
+  bottom: 15%;
 }
 .precioydesc{ 
   display: flex;
@@ -197,33 +219,57 @@ font-size: 17px;
   text-align: center;
   }
 .main{
-  width: 90%;
+  width: 100%;
   align-content: center;
-  background-color: #ebebeb
+  background-color: #ebebeb;
+  margin: 0px ;
   }
 /*                          MEDIA 361 MEDIA 361 MEDIA 361 MEDIA 361  MEDIA 361 MEDIA 361 MEDIA 361 */
 @media (min-width: 361px){
 .descprod{
   display: block;
+  }
+.main-header-top-bar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  }
+.logoybuscador{
+  width: 66.6%;
 }
-
+.copy-header{ 
+  max-width: 33.3%;
+  text-align: right;
+  font-size: 1.5vw;
 }
-
-
-
+.hamburguer-button {
+  display: none;
+}
+.main-navbar {
+  display: flex;   
+  justify-content: space-between;
+}
+.main-navbar ul {
+  display: flex;
+  }
+.main-navbar li {
+  margin: 0 5px;
+}
+.cuerpoproductos{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.containerproducto1, .containerproducto2{
+  display: block;
+  width: 50%;
+  flex-wrap: wrap;
+} }
 
 /*                          MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 MEDIA 768 */
 
 @media (min-width: 769px){  
-.main-header-top-bar {
-  display: flex;
-  justify-content: space-between;
-}
-.copy-header{ 
-  max-width: 350px;
-  text-align: right;
-  font-size: 18px;
-}
+
+
 .hamburguer-button {
   display: none;
 }
@@ -244,16 +290,17 @@ font-size: 17px;
   flex-wrap: nowrap;
 }
 
-.containerproducto1, .containerproducto2{
-  display: block;
-  width: 50%;
-  flex-wrap: wrap;
-}
+
 
 .imagen {
   max-width: 100%;
   width: auto;
   height: auto;
+  }
+  .containerproducto1, .containerproducto2, .containerproducto3, .containerproducto4{
+    display: block;
+    width: 25%;
+    flex-wrap: nowrap;
   }
 }
 
@@ -277,6 +324,7 @@ font-size: 17px;
   }
 .main-navbar a {
     margin: 0 19px; 
+    font-size: 1.5vw;
     }
 .copy-header{ 
     max-width: none;
@@ -289,11 +337,7 @@ font-size: 17px;
       flex-wrap: nowrap;
     }
     
-    .containerproducto1, .containerproducto2, .containerproducto3, .containerproducto4{
-      display: block;
-      width: 25%;
-      flex-wrap: nowrap;
-    }
+    
   }
 
   /*ACA EMPIEZA REGRISTRO ---- ACA EMPIEZA REGRISTRO ---- ACA EMPIEZA REGRISTRO ----   */
