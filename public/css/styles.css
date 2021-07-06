@@ -345,18 +345,32 @@ font-size: 2vw;
     margin: 0px;
     padding: 0px;
     }
-    body{
+    #formreg{
       background-color: #ebebeb;
+      display: flex;
+      width: 100%;
       justify-content: space-around;
       align-items: center;
+
       }
     .nombreyapellido1{
       border-radius: 20%;
       border-radius: olive solid 5px;
-
     }
     .nombredeusuario1{
       border-radius: 20%;
+    }
+    .fechadenacimiento{
+      font-size: 1.5vw;
+      font-weight: 600;
+      display: block;  
+      border: olive solid 5px;
+    }
+    .fechadenacimiento label {
+      border: olive solid 5px;
+      display: block;
+      font-family: 'Roboto', sans-serif;
+        
     }
     .email{
       border-radius: 5px;
