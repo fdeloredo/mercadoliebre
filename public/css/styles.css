@@ -187,6 +187,7 @@ font-size: 2vw;
 .descprod{
   margin: 8px 0px;
   display: none;
+  padding: 20px 0px 0px 0px;
 }
 .create-form{
   padding: 20px 15px;
@@ -225,11 +226,29 @@ font-size: 2vw;
   background-color: #ebebeb;
   margin: 0px ;
   }
+.footer1 {
+  display: block;
+  text-align: center;
+  }
+.parrafopaga, .parrafoenvio, .parrafoseguridad {
+  padding: 20px 0px;
+}
+.parrafopaga i, .parrafoenvio i, .parrafoseguridad i {
+  color: #1259c3;
+}
+.parrafopaga i:hover, .parrafoenvio i:hover, .parrafoseguridad i:hover {
+  color: #39b54a;
+}
+
+
+
+
 /*                          MEDIA 361 MEDIA 361 MEDIA 361 MEDIA 361  MEDIA 361 MEDIA 361 MEDIA 361 */
 @media (min-width: 361px){
 .descprod{
-  display: block;
-  }
+  display: flex;
+   }
+
 .main-header-top-bar {
    display: flex;
    justify-content: space-between;
@@ -290,9 +309,6 @@ font-size: 2vw;
   display: flex;
   flex-wrap: nowrap;
 }
-
-
-
 .imagen {
   max-width: 100%;
   width: auto;
@@ -302,6 +318,20 @@ font-size: 2vw;
     display: block;
     width: 25%;
     flex-wrap: nowrap;
+  }
+  .footer1 {
+    display: flex;
+    }
+  .parrafopaga, .parrafoenvio, .parrafoseguridad {
+    width: 33.3%;
+    font-size: 8px;
+    padding: 10px ;
+  }
+  .copyright {
+    font-size: 10px;
+  }
+  .parrafopaga i, .parrafoenvio i, .parrafoseguridad i {
+    font-size: 15px;
   }
 }
 
@@ -337,7 +367,10 @@ font-size: 2vw;
       display: flex;
       flex-wrap: nowrap;
     }
-    
+    .footer1 {
+      display: flex;
+      text-align: center;
+      }
   }
 
   /*ACA EMPIEZA REGRISTRO ---- ACA EMPIEZA REGRISTRO ---- ACA EMPIEZA REGRISTRO ----   */
@@ -485,7 +518,7 @@ font-size: 2vw;
       background-color: #ebebeb;
       display: block;
       text-align: center;
-     }
+     }  
      .nombredeusuariologin, .contrasenalogin {
       width: 100%;
       max-width: 500px;
@@ -511,6 +544,9 @@ font-size: 2vw;
      }
      .botonenviar1 {
        padding: 30px 0px;
+     }
+     .botonenviar:hover {
+       background-color: #0022AA;
      }
 
     
