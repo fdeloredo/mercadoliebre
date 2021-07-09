@@ -113,8 +113,7 @@ font-size: 2vw;
  .containerinfo{
    border-top: #ebebeb solid 1px;
    padding: 15px;
-  
- }
+  }
 
 .containerproducto1 i{
   display: block;
@@ -177,18 +176,19 @@ font-size: 2vw;
   margin: 30px 0px 0px;
   }
 .precioydesc .precio{
-  width: 30%;
+  width: 50%;
   align-content: flex-start;
   }
 .precioydesc .descuento{
-  width: 70%;
+  width: 50%;
   align-content: flex-start;
 }
 .descprod{
   margin: 8px 0px;
-  display: none;
+  opacity: 0;
   padding: 20px 0px 0px 0px;
-}
+  display: flex   ;
+  } 
 .create-form{
   padding: 20px 15px;
   margin: 20px;
@@ -245,9 +245,10 @@ font-size: 2vw;
 
 /*                          MEDIA 361 MEDIA 361 MEDIA 361 MEDIA 361  MEDIA 361 MEDIA 361 MEDIA 361 */
 @media (min-width: 361px){
-.descprod{
-  display: flex;
-   }
+
+.containerproducto1:hover .descprod, .containerproducto2:hover .descprod, .containerproducto3:hover .descprod, .containerproducto4:hover .descprod {
+  opacity: 1;
+}
 
 .main-header-top-bar {
    display: flex;
@@ -261,17 +262,36 @@ font-size: 2vw;
   max-width: 33.3%;
   text-align: right;
   font-size: 1.5vw;
-}
+} 
 .hamburguer-button {
   display: none;
 }
 .main-navbar {
   display: flex;   
   justify-content: space-between;
+} 
+.left-navbar {
+  max-width: 50%;
+  font-size: auto;
+  display: inline;
+  padding: 0px 0px 0px 30px;
 }
-.main-navbar ul {
-  display: flex;
+.left-navbar li a, .right-navbar li a {
+  display: inline;
+  font-size: 08px ;
   }
+.right-navbar{
+  max-width: 50%;
+  display: inline;
+}
+
+.right-navbar li {
+  display: inline;
+}
+.left-navbar li {
+  display: inline;
+}
+
 .main-navbar li {
   margin: 0 5px;
 }
@@ -304,6 +324,9 @@ font-size: 2vw;
 .main-navbar li {
   margin: 0 5px;
   
+}
+.left-navbar li a, .right-navbar li a {
+ font-size: 13px; 
 }
 .cuerpoproductos{
   display: flex;
