@@ -411,6 +411,9 @@ font-size: 2vw;
       padding: 10px;
 
       }
+    #formreg input {
+      border: none;
+    }
     .nombreyapellido1{
       display: flex;
       padding: 10px 20px;
